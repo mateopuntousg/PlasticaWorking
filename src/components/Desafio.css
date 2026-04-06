@@ -1,0 +1,144 @@
+.desafio {
+  background: linear-gradient(135deg, #fff5f0 0%, #f8f9fa 100%);
+  padding: 100px 20px;
+}
+
+.desafio .section-title {
+  margin-bottom: 60px;
+  color: #5B4B8A;
+}
+
+.desafio-intro {
+  max-width: 800px;
+  margin: 0 auto 70px;
+  text-align: center;
+}
+
+.desafio-intro p {
+  font-size: 1.15em;
+  line-height: 1.8;
+  color: #666;
+  font-weight: 500;
+}
+
+.desafio-problemas {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 40px;
+  margin-bottom: 60px;
+}
+
+.problema-card {
+  background: white;
+  padding: 40px;
+  border-radius: 12px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+  border-top: 6px solid #FF8C00;
+  transition: all 0.4s ease;
+}
+
+.problema-card:hover {
+  box-shadow: 0 12px 35px rgba(255, 140, 0, 0.15);
+  transform: translateY(-5px);
+}
+
+.problema-card h3 {
+  color: #FF8C00;
+  font-size: 1.4em;
+  margin-bottom: 30px;
+  text-align: center;
+  font-family: 'Playfair Display', serif;
+  font-weight: 700;
+}
+
+.problema-stats {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+}
+
+.stat-item {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.stat-bar-wrapper {
+  width: 100%;
+  height: 28px;
+  background: #f0f0f0;
+  border-radius: 6px;
+  overflow: hidden;
+}
+
+.stat-bar {
+  height: 100%;
+  background: linear-gradient(90deg, #FF8C00 0%, #d96f00 100%);
+  transition: width 0.8s cubic-bezier(0.23, 1, 0.320, 1);
+  border-radius: 6px;
+}
+
+.stat-label {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 0.9em;
+  color: #666;
+}
+
+.stat-valor {
+  font-weight: 700;
+  color: #FF8C00;
+  font-size: 1.1em;
+}
+
+.desafio-conclusion {
+  background: linear-gradient(135deg, rgba(255, 140, 0, 0.1) 0%, rgba(91, 75, 138, 0.1) 100%);
+  padding: 40px;
+  border-radius: 12px;
+  border-left: 5px solid #FF8C00;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.desafio-conclusion p {
+  font-size: 1.1em;
+  line-height: 1.8;
+  color: #333;
+  margin: 0;
+}
+
+.desafio-conclusion strong {
+  color: #FF8C00;
+  font-weight: 700;
+}
+
+@media (max-width: 768px) {
+  .desafio {
+    padding: 60px 15px;
+  }
+
+  .desafio-intro p {
+    font-size: 1em;
+  }
+
+  .desafio-problemas {
+    gap: 25px;
+  }
+
+  .problema-card {
+    padding: 25px;
+  }
+
+  .problema-card h3 {
+    font-size: 1.2em;
+  }
+
+  .desafio-conclusion {
+    padding: 25px;
+  }
+
+  .desafio-conclusion p {
+    font-size: 0.95em;
+  }
+}

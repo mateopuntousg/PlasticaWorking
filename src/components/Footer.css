@@ -1,0 +1,145 @@
+.contacto {
+  background: white;
+  color: #333;
+  padding: 60px 20px;
+  display: flex;
+  flex-direction: column;
+  border-top: 1px solid #f0f0f0;
+}
+
+.contacto .container {
+  flex: 1;
+}
+
+.contacto .section-title {
+  color: #5B4B8A;
+  margin-bottom: 40px;
+}
+
+.contacto-wrapper {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 40px;
+  align-items: center;
+  margin-bottom: 30px;
+  max-width: 400px;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+}
+
+.contacto-info h3 {
+  font-size: 1.5em;
+  margin-bottom: 25px;
+  color: #333;
+  font-weight: 600;
+}
+
+.info-item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  margin-bottom: 18px;
+}
+
+.info-item .icon {
+  font-size: 1.3em;
+  display: none;
+}
+
+.info-item p {
+  margin: 0;
+  font-size: 0.95em;
+  color: #666;
+}
+
+.contact-buttons {
+  display: flex;
+  flex-direction: row;
+  gap: 12px;
+  margin-top: 30px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.contact-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  padding: 12px 24px;
+  border-radius: 6px;
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 0.95em;
+  transition: all 0.3s ease;
+  color: white;
+  border: 2px solid transparent;
+}
+
+.contact-btn span {
+  font-size: 1.1em;
+  display: none;
+}
+
+.contact-btn.whatsapp {
+  background: #25D366;
+}
+
+.contact-btn.whatsapp:hover {
+  background: #1fb854;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(37, 211, 102, 0.25);
+}
+
+.contact-btn.gmail {
+  background: #EA4335;
+}
+
+.contact-btn.gmail:hover {
+  background: #d33426;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(234, 67, 53, 0.25);
+}
+
+.contact-btn.instagram {
+  background: linear-gradient(135deg, #F58529 0%, #DD2A7B 50%, #8134AF 100%);
+}
+
+.contact-btn.instagram:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(221, 42, 123, 0.25);
+}
+
+.footer-bottom {
+  border-top: 1px solid #e0e0e0;
+  padding-top: 20px;
+  margin-top: 30px;
+  text-align: center;
+}
+
+.footer-bottom p {
+  color: #999;
+  margin: 0;
+  font-size: 0.9em;
+}
+
+@media (max-width: 768px) {
+  .contacto {
+    padding: 40px 20px;
+  }
+
+  .contacto-info h3 {
+    font-size: 1.3em;
+  }
+
+  .contact-buttons {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .contact-btn {
+    width: 100%;
+  }
+}
