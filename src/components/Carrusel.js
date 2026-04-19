@@ -2,7 +2,7 @@ import React, { useEffect, useRef, useState, useMemo } from 'react';
 import './Carrusel.css';
 
 // Carga automática de todas las imágenes en public/fotos/expositorias/carrusel/
-const carruselContext = require.context('../../public/fotos/expositorias/carrusel', false, /\.(jpe?g|png|gif|webp)$/i);
+const carruselContext = require.context('../../public/fotos/expositorias/carrusel', false, /\.(jpe?g|png|gif|webp|avif|bmp|svg)$/i);
 
 function Carrusel() {
   const images = useMemo(() => {
@@ -20,19 +20,38 @@ function Carrusel() {
   };
 
   const nextImage = () => {
-    const newIndex = (currentIndex + 1) % images.length;
-    updateCarousel(newIndex);
+    if (images.length === 0) return;
+    setCurrentIndex((prevIndex) => {
+      const newIndex = (prevIndex + 1) % images.length;
+      if (columnRef.current) {
+        columnRef.current.style.transform = `translateX(-${newIndex * 100}%)`;
+      }
+      return newIndex;
+    });
   };
 
   const prevImage = () => {
-    const newIndex = (currentIndex - 1 + images.length) % images.length;
-    updateCarousel(newIndex);
+    if (images.length === 0) return;
+    setCurrentIndex((prevIndex) => {
+      const newIndex = (prevIndex - 1 + images.length) % images.length;
+      if (columnRef.current) {
+        columnRef.current.style.transform = `translateX(-${newIndex * 100}%)`;
+      }
+      return newIndex;
+    });
   };
 
   useEffect(() => {
+    if (images.length === 0) return;
+    const randomStart = Math.floor(Math.random() * images.length);
+    updateCarousel(randomStart);
+  }, [images.length]);
+
+  useEffect(() => {
+    if (images.length <= 1) return;
     const interval = setInterval(nextImage, 10000);
     return () => clearInterval(interval);
-  }, [currentIndex, images.length]);
+  }, [images.length]);
 
   return (
     <section id="carrusel" className="carrusel-section">

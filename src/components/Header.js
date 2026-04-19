@@ -8,11 +8,13 @@ function Header() {
   return (
     <header className="header">
       <div className="header-content">
-        <div className="logo-img-container">
-          <img src={getImagePath('/fotos/logo/Logo Plastica Working (1).png')} alt="GW Plástica Working" className="logo-img" />
-        </div>
-        <div className="logo-text-center">
-          <h1 className="tagline">YogaTeamWorking</h1>
+        <div className="brand-group">
+          <div className="logo-img-container">
+            <img src={getImagePath('/fotos/logo/Logo Plastica Working (1).png')} alt="GW Plástica Working" className="logo-img" />
+          </div>
+          <div className="logo-text-center">
+            <h1 className="tagline">YogaTeamWorking</h1>
+          </div>
         </div>
         <nav className={`nav ${isMenuOpen ? 'active' : ''}`}>
           <a href="#desafio">Desafío</a>

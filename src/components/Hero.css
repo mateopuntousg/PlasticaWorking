@@ -79,9 +79,10 @@
   letter-spacing: -1px;
   font-family: 'Playfair Display', serif;
   margin-top: -100px;
-  color: #5B4B8A;
-  -webkit-text-stroke: 1.5px white;
-  text-stroke: 1.5px white;
+  color: #ffffff;
+  -webkit-text-stroke: 0;
+  text-stroke: 0;
+  text-shadow: none;
 }
 
 .hero h2 {
@@ -122,7 +123,7 @@
 }
 
 .frase-mentor {
-  margin-top: 30px;
+  margin-top: 130px;
   padding: 20px 30px;
   background: rgba(255, 255, 255, 0.95);
   border-left: 5px solid #FF8C00;
@@ -135,7 +136,7 @@
 }
 
 .frase-mentor p {
-  color: #333;
+  color: #5B4B8A;
   font-size: 1.15em;
   line-height: 1.6;
   margin: 0;
@@ -162,7 +163,7 @@
   }
 
   .frase-mentor {
-    margin-top: 25px;
+    margin-top: 125px;
     padding: 18px 25px;
     font-size: 1em;
   }

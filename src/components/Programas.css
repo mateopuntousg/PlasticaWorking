@@ -214,6 +214,18 @@ body {
   aspect-ratio: 2 / 1;
 }
 
+.programa-galeria img.programa2-foto2-ajustada {
+  object-position: center 20% !important;
+}
+
+.programa-galeria img.programa2-foto3-ajustada {
+  object-position: 75% 20% !important;
+}
+
+.programa-galeria img.programa1-foto3-ajustada {
+  object-position: center 30% !important;
+}
+
 .programa-card::after {
   content: '';
   position: absolute;

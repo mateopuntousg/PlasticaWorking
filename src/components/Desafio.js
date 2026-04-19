@@ -35,7 +35,7 @@ function Desafio() {
           <p>
             Las organizaciones reportan crecientes niveles de insatisfacción laboral, ausencia por enfermedades 
             y problemas de salud física, social y mental. Las empresas pierden productividad mientras sus 
-            colaboradores luchan en silencio
+            colaboradores luchan en silencio.
           </p>
         </div>
 
