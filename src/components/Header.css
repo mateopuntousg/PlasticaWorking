@@ -113,7 +113,7 @@
   }
 
   .header-content {
-    flex-wrap: wrap;
+    flex-wrap: nowrap;
     padding: 10px 15px;
     gap: 10px;
     position: relative;
@@ -142,6 +142,12 @@
 
   .menu-toggle {
     display: block;
+    position: static;
+    margin-left: auto;
+    align-self: center;
+    z-index: 101;
+    font-size: 2em;
+    line-height: 1;
   }
 
   .nav {
