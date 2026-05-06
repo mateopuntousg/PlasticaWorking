@@ -9,7 +9,19 @@ body {
 
 .programas {
   background: linear-gradient(135deg, #f8f9fa 0%, #fff5f0 100%);
-  padding: 100px 20px;
+  padding: 80px 20px;
+}
+
+.programas .section-title {
+  margin-bottom: 14px;
+}
+
+.programas .section-subtitle {
+  margin-bottom: 10px;
+}
+
+.programas .section-subtitle:last-of-type {
+  margin-bottom: 28px;
 }
 
 .section-subtitle {
@@ -109,9 +121,24 @@ body {
 }
 
 .programa-logo img {
-  height: 60px;
+  height: 68px;
   width: auto;
   object-fit: contain;
+}
+
+.programa-card-logo {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 16px;
+  position: relative;
+  z-index: 2;
+}
+
+.programa-card-logo img {
+  height: 304px;
+  width: auto;
+  object-fit: contain;
+  filter: drop-shadow(0 6px 10px rgba(0, 0, 0, 0.12));
 }
 
 .programa-contenido {
@@ -195,12 +222,20 @@ body {
   box-sizing: border-box;
   box-shadow: 0 4px 12px rgba(255, 140, 0, 0.15);
   transition: all 0.3s ease;
+}
+
+.programa-card.expandido .programa-galeria img {
   animation: floatImage 3s ease-in-out infinite;
 }
 
 .programa-galeria img:hover {
   transform: translateY(-8px);
   box-shadow: 0 12px 24px rgba(255, 140, 0, 0.25);
+}
+
+.programa-card.expandido .programa-galeria img:hover {
+  animation-play-state: paused;
+  transform: translateY(-8px);
 }
 
 @keyframes floatImage {
@@ -326,6 +361,14 @@ body {
 
   .programa-logo {
     font-size: 2em;
+  }
+
+  .programa-logo img {
+    height: 58px;
+  }
+
+  .programa-card-logo img {
+    height: 248px;
   }
 
   .programa-contenido {

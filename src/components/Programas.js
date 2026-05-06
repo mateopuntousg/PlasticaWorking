@@ -4,6 +4,7 @@ import { getImagePath } from '../utils/imagePath';
 
 function Programas() {
   const [programaExpandido, setProgramaExpandido] = useState(null);
+  const logoPrograma = getImagePath('/fotos/logo/programas_logo.png');
 
   const programas = [
     {
@@ -16,7 +17,8 @@ function Programas() {
         'Fomentar una atmósfera grupal de pertenencia y cooperación',
         'Ofrecer una herramienta para enfrentar desafíos personales y laborales'
       ],
-      detalles: 'La misión de este programa es fortalecer los vínculos dentro del equipo, apoyar el bienestar personal y mejorar la productividad.',
+      detalles: 'La misión de este programa es fortalecer los vínculos dentro del equipo, apoyar el bienestar personal, mejorar la productividad y consolidar una cultura de trabajo colaborativa. Levantamos necesidades y objetivos en conjunto, aplicamos instrumentos de medición para evaluar resultados y entregamos material fotográfico de la experiencia.',
+      logo: logoPrograma,
       fotos: [
         getImagePath('/fotos/programas/programa-1/foto-1.jpg'),
         getImagePath('/fotos/programas/programa-1/foto-2.jpg'),
@@ -36,6 +38,7 @@ function Programas() {
         'Fortalecer la Resistencia al Estrés'
       ],
       detalles: 'Ofrecemos una experiencia personalizada de Coaching, utilizando como herramienta la experiencia física y sicológica que ofrece el aprendizaje de las posturas de Yoga.',
+      logo: logoPrograma,
       fotos: [
         getImagePath('/fotos/programas/programa-2/foto-1.jpg'),
         getImagePath('/fotos/programas/programa-2/foto-2.jpg'),
@@ -56,6 +59,7 @@ function Programas() {
         'Prevenir lesiones'
       ],
       detalles: 'La práctica de Yoga permite reducir molestias físicas y equilibrar aspectos mentales y emocionales.',
+      logo: logoPrograma,
       fotos: [
         getImagePath('/fotos/programas/programa-3/foto-1.jpg'),
         getImagePath('/fotos/programas/programa-3/foto-2.jpg'),
@@ -73,7 +77,7 @@ function Programas() {
       <div className="container">
         <h2 className="section-title">Nuestros Programas</h2>
         <p className="section-subtitle">Diseñamos programas para organizaciones y empresas que buscan mejorar el bienestar y productividad de sus equipos.</p>
-        
+        <p className="section-subtitle">Levantamos necesidades y objetivos en conjunto, aplicamos instrumentos de medición para evaluar resultados y entregamos material fotográfico de la experiencia.</p>
         <div className="grid">
           {programaExpandido ? (
             // Mostrar solo el programa expandido
@@ -90,7 +94,7 @@ function Programas() {
                       <p className="subtitulo">{programa.subtitulo}</p>
                     </div>
                     <div className="programa-logo">
-                      <img src={getImagePath('/fotos/logo/Logo Plastica Working (1).png')} alt="Plástica Working Logo" />
+                      <img src={programa.logo} alt={`Logo de ${programa.titulo}`} />
                     </div>
                   </div>
                   
@@ -141,6 +145,9 @@ function Programas() {
             // Mostrar todos los programas
             programas.map((programa) => (
               <div key={programa.id} className="card programa-card">
+                <div className="programa-card-logo">
+                  <img src={programa.logo} alt={`Logo de ${programa.titulo}`} />
+                </div>
                 <h3>{programa.titulo}</h3>
                 <p className="subtitulo">{programa.subtitulo}</p>
                 <p>{programa.descripcion}</p>

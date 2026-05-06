@@ -12,12 +12,22 @@ html {
   background-color: #ffffff;
 }
 
+:root {
+  color-scheme: light only;
+}
+
 body {
   font-family: 'Poppins', sans-serif;
   color: #333;
   line-height: 1.8;
   letter-spacing: 0.3px;
   background-color: #ffffff;
+}
+
+#root,
+.App {
+  background-color: #ffffff;
+  color: #333333;
 }
 
 /* Animación de scroll reveal */
@@ -72,6 +82,27 @@ body {
   --dark-bg: #1a1a1a;
   --text-dark: #2c3e50;
   --text-light: #ecf0f1;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    color-scheme: light only;
+    --primary: #FF8C00;
+    --secondary: #5B4B8A;
+    --accent: #2c5f8d;
+    --light-bg: #f8f9fa;
+    --dark-bg: #1a1a1a;
+    --text-dark: #2c3e50;
+    --text-light: #ecf0f1;
+  }
+
+  html,
+  body,
+  #root,
+  .App {
+    background-color: #ffffff;
+    color: #333333;
+  }
 }
 
 @media (forced-colors: active) {
