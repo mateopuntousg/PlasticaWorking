@@ -103,6 +103,7 @@ body {
   color: #FF8C00;
   margin: 0;
   font-weight: 500;
+  text-align: justify;
 }
 
 .programa-logo {
@@ -300,6 +301,7 @@ body {
   font-size: 0.95em;
   font-family: 'Lora', serif;
   font-style: italic;
+  text-align: center;
 }
 
 .programa-card > p:not(.subtitulo) {

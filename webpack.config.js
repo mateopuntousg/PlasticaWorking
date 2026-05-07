@@ -58,6 +58,7 @@ module.exports = (env, argv) => {
       new CopyPlugin({
         patterns: [
           { from: 'public/fotos', to: 'fotos' },
+          { from: 'public/sobrenosotros', to: 'sobrenosotros' },
         ],
       }),
     ],
