@@ -85,6 +85,13 @@
   text-shadow: none;
 }
 
+.hero-content p {
+  font-size: 1.2em;
+  margin-bottom: 30px;
+  text-align: justify;
+  line-height: 1.8;
+}
+
 .hero h2 {
   font-size: 3.2em;
   margin-bottom: 30px;
