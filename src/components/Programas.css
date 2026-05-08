@@ -18,6 +18,9 @@ body {
 
 .programas .section-subtitle {
   margin-bottom: 10px;
+  max-width: 911px;
+  padding: 0 8px;
+  box-sizing: border-box;
 }
 
 .programas .section-subtitle:last-of-type {
@@ -42,7 +45,7 @@ body {
   grid-template-columns: repeat(3, 1fr);
   gap: 35px;
   max-width: 1300px;
-  margin: 0 auto;
+  margin: 40px auto 0;
 }
 
 /* Cuando un programa está expandido, solo ocupa una columna (todo el ancho) */
@@ -164,6 +167,7 @@ body {
   line-height: 1.7;
   margin-bottom: 20px;
   font-size: 0.98em;
+  text-align: left;
 }
 
 .programa-card .objetivos {
@@ -301,7 +305,7 @@ body {
   font-size: 0.95em;
   font-family: 'Lora', serif;
   font-style: italic;
-  text-align: center;
+  text-align: left;
 }
 
 .programa-card > p:not(.subtitulo) {

@@ -280,6 +280,7 @@
   font-size: 0.95em;
   margin-bottom: 20px;
   line-height: 1.5;
+  height: 95px;
 }
 
 .equipo-especialidades {
@@ -313,10 +314,13 @@
 
 .equipo-especialidades li:before {
   content: '';
-  color: #FF8C00;
-  font-weight: bold;
+  width: 6px;
+  height: 6px;
+  background-color: #FF8C00;
+  border-radius: 50%;
   position: absolute;
   left: 0;
+  top: 0.35em;
 }
 
 /* Responsive */
