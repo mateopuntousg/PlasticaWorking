@@ -10,7 +10,7 @@ module.exports = (env, argv) => {
     output: {
       path: path.resolve(__dirname, 'dist'),
       filename: 'bundle.js',
-      publicPath: isProduction ? '/PlasticaWorking/' : '/',
+      publicPath: '/',
       clean: true,
     },
     devServer: {
@@ -59,6 +59,7 @@ module.exports = (env, argv) => {
         patterns: [
           { from: 'public/fotos', to: 'fotos' },
           { from: 'public/sobrenosotros', to: 'sobrenosotros' },
+          { from: 'public/CNAME', to: 'CNAME', noErrorOnMissing: true },
         ],
       }),
     ],
