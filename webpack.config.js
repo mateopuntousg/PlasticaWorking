@@ -59,7 +59,7 @@ module.exports = (env, argv) => {
         patterns: [
           { from: 'public/fotos', to: 'fotos' },
           { from: 'public/sobrenosotros', to: 'sobrenosotros' },
-          { from: 'public/CNAME', to: 'CNAME', noErrorOnMissing: true },
+          { from: 'public/CNAME', to: '.', noErrorOnMissing: true },
         ],
       }),
     ],
