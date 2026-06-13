@@ -73,15 +73,15 @@ function SobreNosotros() {
       rol: 'Directora de Proyecto',
       foto: getImagePath('/fotos/personas/Magdalena.jpg'),
       especialidades: [
-        'Sociologa, Posgrado en Cooperacion para el Desarrollo',
+        'Socióloga, Posgrado en Cooperación para el Desarrollo',
         'Coach Newfield Network',
         'Practitioner PNL Impact',
         'Profesora Certificada de Yoga Integral',
-        'Especializacion en Yoga Terapia Motora',
+        'Especialización en Yoga Terapia Motora',
         'Profesora Certificada Aero Yoga',
         'Diversos Cursos Yoga Iyengar'
       ],
-      descripcion: 'Directora y fundadora con mas de 20 anos de experiencia en diseno e implementacion de clases de yoga en diversos contextos.'
+      descripcion: 'Directora y fundadora con más de 20 años de experiencia en diseño e implementación de clases de yoga en diversos contextos.'
     },
     {
       id: 2,
@@ -92,9 +92,9 @@ function SobreNosotros() {
         'Profesora Certificada de Hatha Yoga',
         'Escuela Chilena de Yoga',
         'Profesora Certificada Aero Yoga',
-        'Especializacion en Yoga Nidra y Meditacion'
+        'Especialización en Yoga Nidra y Meditación'
       ],
-      descripcion: 'Experta en tecnicas de relajacion y meditacion, especializada en yoga nidra para el bienestar integral.'
+      descripcion: 'Experta en técnicas de relajación y meditación, especializada en yoga nidra para el bienestar integral.'
     },
     {
       id: 3,
@@ -104,10 +104,10 @@ function SobreNosotros() {
       especialidades: [
         'Profesora Certificada Dynamic Yoga',
         'Profesora Certificada Aero Yoga',
-        'Especializacion en Biometria del Yoga',
-        'Especializacion en Anatomia Aplicada al Yoga'
+        'Especialización en Biometría del Yoga',
+        'Especialización en Anatomía Aplicada al Yoga'
       ],
-      descripcion: 'Especialista en biomecanica y movimiento, enfocada en la prevencion de lesiones y optimizacion postural.'
+      descripcion: 'Especialista en biomecánica y movimiento, enfocada en la prevención de lesiones y optimización postural.'
     }
   ];
 
